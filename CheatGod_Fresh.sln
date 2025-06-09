@@ -1,6 +1,9 @@
-Using Solution File Format Version 11.00
+BEGIN PROJECT
+Version1=20
 General
 Name=CheatGod_Fresh
 
-Project=CheatGod_Fresh, CheatGod_Fresh.vcxproj, VC'
-End
+Project="CheatGod_Fresh","CheatGod_Fresh.vcxproj","VC"
+
+END
+ProjectConfigurationSelected=CheatGod_Fresh.vcxproj 
