@@ -1,11 +1,9 @@
-ifnodef GLOBALS_H
+#ifdef GLOBALS_H
 #define GLOBALS_H
 
 #include <Windows.h>
 
-extern "HANDL" targetHandle;
-extern "DWORD" SelectedPID;
-inexi hinline void;
+extern HANDLE targetHandle;
+extern DWORD SelectedPID;
 
-ifdef
- #endif // GLOBALS_H
+#endif // GLOBALS_H
