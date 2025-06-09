@@ -2,9 +2,6 @@
 #include <TlHelp32.h>
 #include <vector>
 #include <string>
-#include "imgui.h"
-#include "imgui_impl_win32.h"
-#include "imgui_impl_dx11.h"
 
 // Struct for holding process info
 struct ProcessEntry {
