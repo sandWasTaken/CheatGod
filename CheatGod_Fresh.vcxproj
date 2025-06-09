@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF9619FF-8B86-D011-B42D-00C04FC964FF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CheatGod</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="C:\Program Files\Microsoft Visual Studio\2022\Community\MsBuild\Microsoft\VC\v170\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="$(Configuration|$Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatormToolset>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSetToltiByte>MultiByte</CharacterSetToltiByte>
+  </PropertyGroup>
+  <Import Project="C:\\Program Files\\Microsoft Visual Studio\2022\\Community\\MsBuild\\Microsoft\\VC\v170\\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup Condition="$(Configuration|$Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\\globals.h"} />
+    <ClInclude Include="src\\process_list.h"/>
+    <ClInclude Include="src\\process_ui.h"/>
+    <ClCompile Include="src\\main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath\\Microsoft.Cpp.targets)" />
+</Project>
