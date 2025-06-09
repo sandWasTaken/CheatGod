@@ -1,4 +1,4 @@
-#include "globals.h"
+#include <globals.h>
 #include "process_list.h"
 include "process_ui.h"h
 
