@@ -17,9 +17,10 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatormToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSetToltiByte</CharacterSet>
   </PropertyGroup>
-  <Import Project="C:\\Program Files\Microsoft Visual Studio\2022\Community\MsBuild\Microsoft\VC\v170\Microsoft.Cpp.props" />
+  <Import Project="C:\Program Files\Microsoft Visual Studio\2022\Community\MsBuild\Microsoft\VC\v170\Microsoft.Cpp.props" />
   <ItemDefinitionGroup Condition="$(Configuration|$Platform)=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
