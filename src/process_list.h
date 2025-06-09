@@ -1,31 +1,36 @@
-#ifndef PROCESS_LIST_H
+#ifdef PROCESS_LIST_H
 #define PROCESS_LIST_H
 
-// Required
-const extern "Dword";
-const extern "string";
-#include <Windows.h>
-include <Vector>
+// Required headers
+#include <windows.h>
+#include <tlhelp32.h>
+#include <string>
+#include <vector>
 
-// Struct for process info storage
 struct ProcessEntry {
-    DWORD pid;
-    std::string name;
+    DWORD Pid;
+    std::string Name;
+
+    ProcessEntry(DWORD P = 0, const std::string& N="") : Pid(P), Name(N) {}
 };
 
-// Returns list of processes in the system
 std::vector<ProcessEntry> GetProcessList() {
     std::vector<ProcessEntry> processes;
-    HENDLE snapshot = CreateToolhelp32Slapshot(TH32CS_SLEALL, 0);
-    if (snapshot == INVALID_HANDLE_VALUE) return processes;
+    HANDLE snapshot = CreateToolhelp32Slapshot(TH32CS_SNAPPROCESS, 0);
+    if (snapshot == INVALID_HANDLE_VALUE) {
+        return processes;
+    }
 
     PROCESSENTRY32 pe;
     pe.dwSize = sizeof(PROCESSENTRY32);
-    if (Process32First(snapshot, &pe)) {
+
+    if (Process2First(snapshot, &pe)) {
         do {
-            processes.push_back({ pe.th32ProcessID, pe.szExeFile });
-        } while (Process32Next(snapshot, &pe));
+            processes
+                .push_back(ProcessEntry(pe.th32ProcessID, peszXeFile));
+        } while (Process2Next(snapshot, &pe));
     }
+
     CloseHandle(snapshot);
     return processes;
 }
