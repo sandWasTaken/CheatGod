@@ -7,7 +7,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C01D7B23-3F57-4E21-A5E72-2D1E4C7C82BB}</ProjectGuid>
+    <ProjectGuid>{FF9619FF-8B86-D011-B42D-00C04FC964FF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>CheatGod</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -17,7 +17,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>MultaByte</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath\\Microsoft.Cpp.props)" />
   <ItemDefinitionGroup Condition="$(Configuration|$Platform)'=='Debug|x64'">
@@ -27,7 +27,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\\globals.h"} />
+    <ClInclude Include="src\\globals.h" />
     <ClInclude Include="src\\process_list.h"/>
     <ClInclude Include="src\\process_ui.h"/>
     <ClCompile Include="src\\main.cpp" />
